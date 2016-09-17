@@ -9,7 +9,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'build'),    //使用package.json的dev命令则隐藏build文件夹
         filename: 'bundle.js',
-        publicPath:'./build/'                     //webpack 打包用 publicPath:'./build/'
+        publicPath:'./build/'                   //webpack 打包用 publicPath:'./build/',webpack 开服务器测试用 publicPath:'/build/'
     },
     devtool: 'cheap-module-source-map',
     devServer: {
